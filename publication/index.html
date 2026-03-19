@@ -113,6 +113,64 @@
                         <div class="row m-0 mt-3 p-0">
                             <div class="col-sm-1 p-0 abbr">
                                 <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
+                                    href="https://arxiv.org/abs/2603.17919" target="_blank">
+                                    arXiv
+                                </a>
+                            </div>
+                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                                <div id="sun2026training" class="col p-0">
+                                    <h5 class="title mb-0">Training Diffusion Language Models for Black-Box Optimization
+                                    </h5>
+                                    <div class="author">
+                                        <nobr>Zipeng Sun*,</nobr>
+                                        <nobr>Can Chen*,</nobr>
+                                        <nobr><em>Ye Yuan</em>,</nobr>
+                                        <nobr>Haolun Wu,</nobr>
+                                        <nobr>Jiayao Gu,</nobr>
+                                        <nobr>Christopher Pal,</nobr>
+                                        and
+                                        <nobr>Xue Liu.</nobr>
+
+                                    </div>
+
+                                    <div>
+                                        <p class="periodical font-italic">
+                                            arXiv:2603.17919.
+                                        </p>
+
+                                    </div>
+
+
+                                    <div class="col p-0">
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                            href="#sun2026training-abstract" role="button" aria-expanded="false"
+                                            aria-controls="sun2026training-abstract">Abstract</a>
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1"
+                                            href="https://arxiv.org/pdf/2603.17919" target="_blank">PDF</a>
+
+                                    </div>
+
+
+                                    <div class="col mt-2 p-0">
+                                        <div id="sun2026training-abstract" class="collapse">
+                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            We study offline black-box optimization (BBO), aiming to discover improved designs from an offline dataset of designs and labels, a problem common in robotics, DNA, and materials science with limited labeled samples. While recent work applies autoregressive LLMs to BBO by formatting tasks as natural-language prompts, their left-to-right design generation struggles to capture the strong bidirectional dependencies inherent in design problems. To address this, we propose adapting diffusion LLMs to offline BBO to leverage their bidirectional modeling capabilities. However, a domain gap exists between the natural text pre-training of diffusion LLMs and the heterogeneous signals in BBO (prompts, designs, and labels). To bridge this gap, we construct a unified prompt-response corpus and introduce delimiter tokens to explicitly mark field boundaries for domain adaptation. We further propose a two-stage post-training framework to align the diffusion LLM generation with high-label designs. The first stage performs supervised fine-tuning on the unified dataset via masked-response prediction, and the second stage adopts reinforcement learning with rewards defined by label improvements. Our method achieves state-of-the-art results on Design-Bench small-data settings.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="row m-0 mt-3 p-0">
+                            <div class="col-sm-1 p-0 abbr">
+                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
                                     href="https://arxiv.org/abs/2602.11453" target="_blank">
                                     arXiv
                                 </a>
@@ -570,6 +628,123 @@
             </div>
             <div class="col-sm-11 p-0">
                 <ol class="bibliography">
+                    <li>
+                        <div class="row m-0 mt-3 p-0">
+                            <div class="col-sm-1 p-0 abbr">
+                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
+                                    href="https://openreview.net/forum?id=bTMCB3gorf" target="_blank">
+                                    ICLR
+                                </a>
+                            </div>
+                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                                <div id="yuan2026spade" class="col p-0">
+                                    <h5 class="title mb-0">Support-Proximity Augmented Diffusion Estimation for Offline Black-Box Optimization
+                                    </h5>
+                                    <div class="author">
+                                        <nobr><em>Ye Yuan*</em>,</nobr>
+                                        <nobr>Yonghan Yang*,</nobr>
+                                        <nobr>Zipeng Sun,</nobr>
+                                        <nobr>Linfeng Du,</nobr>
+                                        <nobr>Bowei He,</nobr>
+                                        <nobr>Haolun Wu,</nobr>
+                                        <nobr>Can Chen,</nobr>
+                                        and
+                                        <nobr>Xue Liu.</nobr>
+
+                                    </div>
+
+                                    <div>
+                                        <p class="periodical font-italic">
+                                            The Fourteenth International Conference on Learning Representations (ICLR 2026) Second Workshop on Deep Generative Model in Machine Learning: Theory, Principle and Efficacy.
+                                        </p>
+
+                                    </div>
+
+
+                                    <div class="col p-0">
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                            href="#yuan2026spade-abstract" role="button" aria-expanded="false"
+                                            aria-controls="yuan2026spade-abstract">Abstract</a>
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1"
+                                            href="https://openreview.net/attachment?id=bTMCB3gorf&name=pdf" target="_blank">PDF</a>
+
+                                    </div>
+
+
+                                    <div class="col mt-2 p-0">
+                                        <div id="yuan2026spade-abstract" class="collapse">
+                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            Offline black-box optimization aims to discover novel designs with high property scores using only a static dataset, a task fundamentally challenged by the out-of-distribution (OOD) extrapolation problem. Existing approaches typically bifurcate into inverse methods, which struggle with the ill-posed nature of mapping scores to designs, and forward methods, which often lack the distributional expressivity to quantify uncertainty effectively. In this work, we propose \textbf{SPADE} (\textbf{S}upport-\textbf{P}roximity \textbf{A}ugmented \textbf{D}iffusion \textbf{E}stimation), a novel framework that reimagines forward surrogate modeling through the lens of conditional generative modeling. SPADE models the forward likelihood using a diffusion model, but with two critical enhancements to tailor it for optimization: (1) a \emph{Calibrated Diffusion Estimation} module that enforces global consistency in statistical moments and pairwise rankings, and (2) a \emph{Support-Proximity Regularization} mechanism that implicitly internalizes the data manifold constraint via kNN-based density estimation. Theoretically, we prove that our regularization is first-order equivalent to maximizing a Bayesian posterior with a valid design prior. Empirically, SPADE achieves state-of-the-art performance across Design-Bench tasks and an LLM data mixture optimization benchmark.    
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="row m-0 mt-3 p-0">
+                            <div class="col-sm-1 p-0 abbr">
+                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
+                                    href="https://openreview.net/forum?id=SiyMRNEaQE" target="_blank">
+                                    ICLR
+                                </a>
+                            </div>
+                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                                <div id="li2026towards" class="col p-0">
+                                    <h5 class="title mb-0">Towards Reasoning Reuse: A New Paradigm in Model Collaboration
+                                    </h5>
+                                    <div class="author">
+                                        <nobr>Zhengxi Li,</nobr>
+                                        <nobr>Fuyuan Lyu,</nobr>
+                                        <nobr>Qiyuan Zhang,</nobr>
+                                        <nobr><em>Ye Yuan</em>,</nobr>
+                                        <nobr>Haolun Wu,</nobr>
+                                        and
+                                        <nobr>Xue Liu.</nobr>
+
+                                    </div>
+
+                                    <div>
+                                        <p class="periodical font-italic">
+                                            The Fourteenth International Conference on Learning Representations (ICLR 2026) Third Workshop on Test-Time Updates.
+                                        </p>
+
+                                    </div>
+
+
+                                    <div class="col p-0">
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                            href="#li2026towards-abstract" role="button" aria-expanded="false"
+                                            aria-controls="li2026towards-abstract">Abstract</a>
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1"
+                                            href="https://openreview.net/attachment?id=SiyMRNEaQE&name=pdf" target="_blank">PDF</a>
+
+                                    </div>
+
+
+                                    <div class="col mt-2 p-0">
+                                        <div id="li2026towards-abstract" class="collapse">
+                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            While large language models (LLMs) have demonstrated remarkable capabilities through training-time scaling and test-time scaling, increased costs constrain their deployment in applications. Existing works have developed fine-grained collaboration frameworks with small language models (SLMs). Despite their success in balancing performance and cost, these frameworks are hard to deploy broadly, since they are typically trained for a specific set of models and assume white-box access to all collaborating models. We propose \textbf{reasoning reuse}, a training-free model collaboration framework via test-time updates: an LLM first generates a limited number of reasoning steps, and an SLM reuses these steps to continue inference. This setting includes a large design space over what the LLM emits and how the SLM reuses it. In this paper, we establish feasibility: our experiments show that an SLM has the ability to reuse an LLM’s reasoning steps. The ideas and findings in this work serve as an alternative framework for efficient language model collaboration at test time, paving the way for future work in this direction.    
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
                     <li>
                         <div class="row m-0 mt-3 p-0">
                             <div class="col-sm-1 p-0 abbr">
