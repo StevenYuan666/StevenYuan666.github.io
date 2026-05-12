@@ -113,6 +113,66 @@
                         <div class="row m-0 mt-3 p-0">
                             <div class="col-sm-1 p-0 abbr">
                                 <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
+                                    href="https://arxiv.org/abs/2605.06460" target="_blank">
+                                    arXiv
+                                </a>
+                            </div>
+                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                                <div id="li2026miner" class="col p-0">
+                                    <h5 class="title mb-0">MINER: Mining Multimodal Internal Representation for Efficient Retrieval
+                                    </h5>
+                                    <div class="author">
+                                        <nobr>Weien Li*,</nobr>
+                                        <nobr>Rui Song*,</nobr>
+                                        <nobr>Zeyu Li,</nobr>
+                                        <nobr>Haochen Liu,</nobr>
+                                        <nobr>Gonghao Zhang,</nobr>
+                                        <nobr>Difan Jiao,</nobr>
+                                        <nobr>Zhenwei Tang,</nobr>
+                                        <nobr>Bowei He,</nobr>
+                                        <nobr>Haolun Wu</nobr>
+                                        <nobr>Xue Liu</nobr>
+                                        and
+                                        <nobr><em>Ye Yuan</em>.</nobr>
+
+                                    </div>
+
+                                    <div>
+                                        <p class="periodical font-italic">
+                                            arXiv:2605.06460.
+                                        </p>
+
+                                    </div>
+
+
+                                    <div class="col p-0">
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                            href="#li2026miner-abstract" role="button" aria-expanded="false"
+                                            aria-controls="li2026miner-abstract">Abstract</a>
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1"
+                                            href="https://arxiv.org/pdf/2605.06460" target="_blank">PDF</a>
+
+                                    </div>
+
+
+                                    <div class="col mt-2 p-0">
+                                        <div id="li2026miner-abstract" class="collapse">
+                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            Visual document retrieval has become essential for accessing information in visually rich documents. Existing approaches fall into two camps. Late-interaction retrievers achieve strong quality through fine-grained token-level matching but store hundreds of vectors per page, incurring large index footprints and high serving costs. By contrast, dense single-vector retrievers retain storage and latency advantages but consistently lag in quality because they compress all information into a single final-layer embedding. In this work, we first conduct a layerwise diagnostic on single-vector retrievers, revealing that retrieval-relevant signal resides in internal representations. Motivated by these findings, we propose MINER (Mining Multimodal Internal RepreseNtation for Efficient Retrieval), a lightweight plug-in module that probes and fuses internal signals across transformer layers into a single compact embedding without modifying the backbone or sacrificing single-vector efficiency. The first Retrieval-Aligned Layer Probing stage attaches a lightweight probe at each layer, surfacing which dimensions carry retrieval-relevant information. The subsequent Adaptive Sparse Multi-Layer Fusion stage applies performance-adaptive neuron-level masking to the selected layers and fuses the surviving signals into the final dense vector. Across ViDoRe V1/V2/V3, MINER outperforms existing dense single-vector retrievers on the majority of benchmarks, with up to 4.5% nDCG@5 improvement over its corresponding backbone. Compared to strong late-interaction baselines, in some settings MINER substantially narrows the nDCG@5 gap to 0.2 while preserving the storage and serving advantages of dense retrieval.</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="row m-0 mt-3 p-0">
+                            <div class="col-sm-1 p-0 abbr">
+                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
                                     href="https://arxiv.org/abs/2604.01113" target="_blank">
                                     arXiv
                                 </a>
@@ -231,63 +291,6 @@
                         </div>
                     </li>
 
-                    <li>
-                        <div class="row m-0 mt-3 p-0">
-                            <div class="col-sm-1 p-0 abbr">
-                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
-                                    href="https://arxiv.org/abs/2603.17919" target="_blank">
-                                    arXiv
-                                </a>
-                            </div>
-                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-
-                                <div id="sun2026training" class="col p-0">
-                                    <h5 class="title mb-0">Training Diffusion Language Models for Black-Box Optimization
-                                    </h5>
-                                    <div class="author">
-                                        <nobr>Zipeng Sun*,</nobr>
-                                        <nobr>Can Chen*,</nobr>
-                                        <nobr><em>Ye Yuan</em>,</nobr>
-                                        <nobr>Haolun Wu,</nobr>
-                                        <nobr>Jiayao Gu,</nobr>
-                                        <nobr>Christopher Pal,</nobr>
-                                        and
-                                        <nobr>Xue Liu.</nobr>
-
-                                    </div>
-
-                                    <div>
-                                        <p class="periodical font-italic">
-                                            arXiv:2603.17919.
-                                        </p>
-
-                                    </div>
-
-
-                                    <div class="col p-0">
-
-                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
-                                            href="#sun2026training-abstract" role="button" aria-expanded="false"
-                                            aria-controls="sun2026training-abstract">Abstract</a>
-
-                                        <a class="badge grey waves-effect font-weight-light mr-1"
-                                            href="https://arxiv.org/pdf/2603.17919" target="_blank">PDF</a>
-
-                                    </div>
-
-
-                                    <div class="col mt-2 p-0">
-                                        <div id="sun2026training-abstract" class="collapse">
-                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                                            We study offline black-box optimization (BBO), aiming to discover improved designs from an offline dataset of designs and labels, a problem common in robotics, DNA, and materials science with limited labeled samples. While recent work applies autoregressive LLMs to BBO by formatting tasks as natural-language prompts, their left-to-right design generation struggles to capture the strong bidirectional dependencies inherent in design problems. To address this, we propose adapting diffusion LLMs to offline BBO to leverage their bidirectional modeling capabilities. However, a domain gap exists between the natural text pre-training of diffusion LLMs and the heterogeneous signals in BBO (prompts, designs, and labels). To bridge this gap, we construct a unified prompt-response corpus and introduce delimiter tokens to explicitly mark field boundaries for domain adaptation. We further propose a two-stage post-training framework to align the diffusion LLM generation with high-label designs. The first stage performs supervised fine-tuning on the unified dataset via masked-response prediction, and the second stage adopts reinforcement learning with rewards defined by label improvements. Our method achieves state-of-the-art results on Design-Bench small-data settings.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </li>
 
                     <li>
                         <div class="row m-0 mt-3 p-0">
@@ -556,6 +559,129 @@
             </div>
             <div class="col-sm-11 p-0">
                 <ol class="bibliography">
+                    <li>
+                        <div class="row m-0 mt-3 p-0">
+                            <div class="col-sm-1 p-0 abbr">
+                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
+                                    href="https://openreview.net/forum?id=bTMCB3gorf" target="_blank">
+                                    ICML
+                                </a>
+                            </div>
+                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                                <div id="yuan2026spade" class="col p-0">
+                                    <h5 class="title mb-0">Support-Proximity Augmented Diffusion Estimation for Offline Black-Box Optimization
+                                    </h5>
+                                    <div class="author">
+                                        <nobr><em>Ye Yuan*</em>,</nobr>
+                                        <nobr>Yonghan Yang*,</nobr>
+                                        <nobr>Zipeng Sun,</nobr>
+                                        <nobr>Linfeng Du,</nobr>
+                                        <nobr>Bowei He,</nobr>
+                                        <nobr>Haolun Wu,</nobr>
+                                        <nobr>Can Chen,</nobr>
+                                        and
+                                        <nobr>Xue Liu.</nobr>
+
+                                    </div>
+
+                                    <div>
+                                        <p class="periodical font-italic">
+                                            The Forty-Third International Conference on Machine Learning (ICML 2026). <br>
+                                            The Fourteenth International Conference on Learning Representations (ICLR 2026) Second Workshop on Deep Generative Model in Machine Learning: Theory, Principle and Efficacy.
+                                        </p>
+
+                                    </div>
+
+
+                                    <div class="col p-0">
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                            href="#yuan2026spade-abstract" role="button" aria-expanded="false"
+                                            aria-controls="yuan2026spade-abstract">Abstract</a>
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1"
+                                            href="https://openreview.net/attachment?id=bTMCB3gorf&name=pdf" target="_blank">PDF</a>
+
+                                    </div>
+
+
+                                    <div class="col mt-2 p-0">
+                                        <div id="yuan2026spade-abstract" class="collapse">
+                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            Offline black-box optimization aims to discover novel designs with high property scores using only a static dataset, a task fundamentally challenged by the out-of-distribution (OOD) extrapolation problem. Existing approaches typically bifurcate into inverse methods, which struggle with the ill-posed nature of mapping scores to designs, and forward methods, which often lack the distributional expressivity to quantify uncertainty effectively. In this work, we propose \textbf{SPADE} (\textbf{S}upport-\textbf{P}roximity \textbf{A}ugmented \textbf{D}iffusion \textbf{E}stimation), a novel framework that reimagines forward surrogate modeling through the lens of conditional generative modeling. SPADE models the forward likelihood using a diffusion model, but with two critical enhancements to tailor it for optimization: (1) a \emph{Calibrated Diffusion Estimation} module that enforces global consistency in statistical moments and pairwise rankings, and (2) a \emph{Support-Proximity Regularization} mechanism that implicitly internalizes the data manifold constraint via kNN-based density estimation. Theoretically, we prove that our regularization is first-order equivalent to maximizing a Bayesian posterior with a valid design prior. Empirically, SPADE achieves state-of-the-art performance across Design-Bench tasks and an LLM data mixture optimization benchmark.    
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="row m-0 mt-3 p-0">
+                            <div class="col-sm-1 p-0 abbr">
+                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
+                                    href="https://arxiv.org/abs/2603.17919" target="_blank">
+                                    ICML
+                                </a>
+                            </div>
+                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                                <div id="sun2026training" class="col p-0">
+                                    <h5 class="title mb-0">Training Diffusion Language Models for Black-Box Optimization
+                                    </h5>
+                                    <div class="author">
+                                        <nobr>Zipeng Sun*,</nobr>
+                                        <nobr>Can Chen*,</nobr>
+                                        <nobr><em>Ye Yuan</em>,</nobr>
+                                        <nobr>Haolun Wu,</nobr>
+                                        <nobr>Jiayao Gu,</nobr>
+                                        <nobr>Christopher Pal,</nobr>
+                                        and
+                                        <nobr>Xue Liu.</nobr>
+
+                                    </div>
+
+                                    <div>
+                                        <p class="periodical font-italic">
+                                            The Forty-Third International Conference on Machine Learning (ICML 2026).
+                                        </p>
+                                        <p class="periodical font-italic"><span style="color: orangered;"><b>Spotlight, top
+                                                    2% of
+                                                    all submitted
+                                                    papers.</b></span></p>
+
+                                    </div>
+
+
+                                    <div class="col p-0">
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                            href="#sun2026training-abstract" role="button" aria-expanded="false"
+                                            aria-controls="sun2026training-abstract">Abstract</a>
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1"
+                                            href="https://arxiv.org/pdf/2603.17919" target="_blank">PDF</a>
+
+                                    </div>
+
+
+                                    <div class="col mt-2 p-0">
+                                        <div id="sun2026training-abstract" class="collapse">
+                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            We study offline black-box optimization (BBO), aiming to discover improved designs from an offline dataset of designs and labels, a problem common in robotics, DNA, and materials science with limited labeled samples. While recent work applies autoregressive LLMs to BBO by formatting tasks as natural-language prompts, their left-to-right design generation struggles to capture the strong bidirectional dependencies inherent in design problems. To address this, we propose adapting diffusion LLMs to offline BBO to leverage their bidirectional modeling capabilities. However, a domain gap exists between the natural text pre-training of diffusion LLMs and the heterogeneous signals in BBO (prompts, designs, and labels). To bridge this gap, we construct a unified prompt-response corpus and introduce delimiter tokens to explicitly mark field boundaries for domain adaptation. We further propose a two-stage post-training framework to align the diffusion LLM generation with high-label designs. The first stage performs supervised fine-tuning on the unified dataset via masked-response prediction, and the second stage adopts reinforcement learning with rewards defined by label improvements. Our method achieves state-of-the-art results on Design-Bench small-data settings.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                     <li>
                         <div class="row m-0 mt-3 p-0">
                             <div class="col-sm-1 p-0 abbr">
@@ -855,65 +981,6 @@
                                         <div id="liu2026same-abstract" class="collapse">
                                             <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
                                             Large language models (LLMs) have been widely applied across various domains of finance. Since their training data are largely derived from human-authored corpora, LLMs may inherit a range of human biases. Behavioral biases can lead to instability and uncertainty in decision-making, particularly when processing financial information. However, existing research on LLM bias has mainly focused on direct questioning or simplified, general-purpose settings, with limited consideration of the complex real-world financial environments and high-risk, context-sensitive, multilingual financial misinformation detection tasks (\mfmd). In this work, we propose \mfmdscen, a comprehensive benchmark for evaluating behavioral biases of LLMs in \mfmd across diverse economic scenarios. In collaboration with financial experts, we construct three types of complex financial scenarios: (i) role- and personality-based, (ii) role- and region-based, and (iii) role-based scenarios incorporating ethnicity and religious beliefs. We further develop a multilingual financial misinformation dataset covering English, Chinese, Greek, and Bengali. By integrating these scenarios with misinformation claims, \mfmdscen enables a systematic evaluation of 22 mainstream LLMs. Our findings reveal that pronounced behavioral biases persist across both commercial and open-source models.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="row m-0 mt-3 p-0">
-                            <div class="col-sm-1 p-0 abbr">
-                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
-                                    href="https://openreview.net/forum?id=bTMCB3gorf" target="_blank">
-                                    ICLR
-                                </a>
-                            </div>
-                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-
-                                <div id="yuan2026spade" class="col p-0">
-                                    <h5 class="title mb-0">Support-Proximity Augmented Diffusion Estimation for Offline Black-Box Optimization
-                                    </h5>
-                                    <div class="author">
-                                        <nobr><em>Ye Yuan*</em>,</nobr>
-                                        <nobr>Yonghan Yang*,</nobr>
-                                        <nobr>Zipeng Sun,</nobr>
-                                        <nobr>Linfeng Du,</nobr>
-                                        <nobr>Bowei He,</nobr>
-                                        <nobr>Haolun Wu,</nobr>
-                                        <nobr>Can Chen,</nobr>
-                                        and
-                                        <nobr>Xue Liu.</nobr>
-
-                                    </div>
-
-                                    <div>
-                                        <p class="periodical font-italic">
-                                            The Fourteenth International Conference on Learning Representations (ICLR 2026) Second Workshop on Deep Generative Model in Machine Learning: Theory, Principle and Efficacy.
-                                        </p>
-
-                                    </div>
-
-
-                                    <div class="col p-0">
-
-                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
-                                            href="#yuan2026spade-abstract" role="button" aria-expanded="false"
-                                            aria-controls="yuan2026spade-abstract">Abstract</a>
-
-                                        <a class="badge grey waves-effect font-weight-light mr-1"
-                                            href="https://openreview.net/attachment?id=bTMCB3gorf&name=pdf" target="_blank">PDF</a>
-
-                                    </div>
-
-
-                                    <div class="col mt-2 p-0">
-                                        <div id="yuan2026spade-abstract" class="collapse">
-                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                                            Offline black-box optimization aims to discover novel designs with high property scores using only a static dataset, a task fundamentally challenged by the out-of-distribution (OOD) extrapolation problem. Existing approaches typically bifurcate into inverse methods, which struggle with the ill-posed nature of mapping scores to designs, and forward methods, which often lack the distributional expressivity to quantify uncertainty effectively. In this work, we propose \textbf{SPADE} (\textbf{S}upport-\textbf{P}roximity \textbf{A}ugmented \textbf{D}iffusion \textbf{E}stimation), a novel framework that reimagines forward surrogate modeling through the lens of conditional generative modeling. SPADE models the forward likelihood using a diffusion model, but with two critical enhancements to tailor it for optimization: (1) a \emph{Calibrated Diffusion Estimation} module that enforces global consistency in statistical moments and pairwise rankings, and (2) a \emph{Support-Proximity Regularization} mechanism that implicitly internalizes the data manifold constraint via kNN-based density estimation. Theoretically, we prove that our regularization is first-order equivalent to maximizing a Bayesian posterior with a valid design prior. Empirically, SPADE achieves state-of-the-art performance across Design-Bench tasks and an LLM data mixture optimization benchmark.    
                                             </div>
                                         </div>
                                     </div>
