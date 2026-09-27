@@ -180,7 +180,32 @@
                     <img class="profile-img img-responsive" src="/assets/img/profile_photo.jpg" align="middle" height="180"
                         style="border-radius: 15%;">
                     <img src="/assets/img/Mila_McGill.png" align="middle" width="260" />
-                </div>
+                    <div class="counter-container">
+                        I am officially...
+                        <div id="age-counter">Loading age...</div>
+                    </div>
+
+                        <script>
+                            // 1. SET YOUR BIRTHDATE HERE (Year, Month [0-11], Day, Hour, Minute)
+                            // Note: Months are 0-indexed in JavaScript (0 = January, 11 = December)
+                            const birthDate = new Date(2000, 11, 5, 7, 55, 0); // December 5, 2000 at 7:55 AM
+
+                            function updateAge() {
+                                const now = new Date();
+                                const ageInMilliseconds = now - birthDate;
+                                
+                                // Convert milliseconds to precise years
+                                // 31556952000 is the average number of milliseconds in a calendar year (accounting for leap years)
+                                const ageInYears = ageInMilliseconds / 31556952000;
+                                
+                                // Display the age fixed to 9 decimal places for a smoothly ticking effect
+                                document.getElementById('age-counter').innerText = ageInYears.toFixed(9) + " years old";
+                            }
+
+                            // Update the counter every 50 milliseconds for a smooth fluid effect
+                            setInterval(updateAge, 50);
+                        </script>
+                    </div>
 
 
 
@@ -276,6 +301,16 @@
         <div class="news mt-3 p-0">
             <h2 class="title mb-4 p-0">News</h2>
             <div class="scrollable-news-container" style="height: 400px; overflow-y: scroll;">
+                <div class="row p-0">
+                    <div class="col-sm-2 p-0">
+                        <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
+                            Sep 2026
+                        </span>
+                    </div>
+                    <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
+                        <p>Our paper "How Data Scales in Agentic Reinforcement Learning: Laws and Synthesis Strategies" is accepted to NeurIPS 2026.</p>
+                    </div>
+                </div>
                 <div class="row p-0">
                     <div class="col-sm-2 p-0">
                         <span class="badge light-blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
