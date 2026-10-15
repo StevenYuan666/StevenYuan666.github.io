@@ -142,7 +142,7 @@
                                             aria-controls="he2026how-abstract">Abstract</a>
 
                                         <a class="badge grey waves-effect font-weight-light mr-1"
-                                            href="" target="_blank">PDF</a>
+                                            href="https://stevenyuan666.github.io/assets/pdf/1927_How_Data_Scales_in_Agenti.pdf" target="_blank">PDF</a>
 
                                     </div>
 
@@ -155,6 +155,103 @@
                             </div>
                         </div>
                     </li>
+
+                    <li>
+                        <div class="row m-0 mt-3 p-0">
+                            <div class="col-sm-1 p-0 abbr">
+                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
+                                    href="" target="_blank">
+                                    NeurIPS
+                                </a>
+                            </div>
+                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                                <div id="li2026who" class="col p-0">
+                                    <h5 class="title mb-0">Who Takes the Lead? Model Ability and Task-Conditioned Collaboration with Humans
+                                    </h5>
+                                    <div class="author">
+                                        <nobr>Weien Li, Haochen Liu, Zeyu Li, Rui Song, Zixuan Dong, <em>Ye Yuan</em></nobr>
+                                        
+
+                                    </div>
+
+                                    <div>
+                                        <p class="periodical font-italic">
+                                            The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026) 1st Workshop on Human-Centered Interpretation for Understanding Agents, Humans, and Interaction.
+                                        </p>
+
+                                    </div>
+
+
+                                    <div class="col p-0">
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                            href="#li2026who-abstract" role="button" aria-expanded="false"
+                                            aria-controls="li2026who-abstract">Abstract</a>
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1"
+                                            href="https://openreview.net/pdf?id=3WETVAe8Cc" target="_blank">PDF</a>
+
+                                    </div>
+
+
+                                    <div class="col mt-2 p-0">
+                                        <div id="li2026who-abstract" class="collapse">
+                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            As language-model agents grow more capable, they can carry more of a task without asking anyone for help. Falling reliance on a human partner is easy to read as a failure of collaboration when it may instead be a correct division of labor, and the rate of human involvement alone cannot tell the two apart. We study this systematically by placing an agent and a person under a shared objective while varying who holds the advantage: the human has a clear advantage, neither does, or the agent does. To obtain this control, we introduce a shared-control maze, in which an agent-controlled and a human-controlled avatar share the objective of reaching a common target in as few team turns as possible. The agent allocates each team turn between acting itself and handing the move to the person, and initial placement sets the human's shortest-path advantage while the task is otherwise unchanged. We evaluate GPT 5.6 Sol, Command A+, Qwen 3.8 27B, and Command R, first measuring solo capability with a single avatar and full-map observability, then running co-play with human participants across the three advantage conditions. Across the four models, stronger solo performance is associated with selective, route-conditioned human involvement: the models that solve the maze reliably on their own act for themselves almost without exception when the human holds no advantage, and involve the human on roughly 80% of initial decisions when the human route is shorter. Command R, the model with substantially weaker solo performance, shows no such selectivity.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="row m-0 mt-3 p-0">
+                            <div class="col-sm-1 p-0 abbr">
+                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
+                                    href="" target="_blank">
+                                    NeurIPS
+                                </a>
+                            </div>
+                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                                <div id="guo2026label" class="col p-0">
+                                    <h5 class="title mb-0">Label Collapse in Diffusion Language Model In-Context Learning
+                                    </h5>
+                                    <div class="author">
+                                        <nobr>Ziye Guo, <em>Ye Yuan</em></nobr>
+                                        
+
+                                    </div>
+
+                                    <div>
+                                        <p class="periodical font-italic">
+                                            The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026) Workshop on DiffuLM – Diffusion Language Models: Foundations, Efficiency, and Reasoning.
+                                        </p>
+
+                                    </div>
+
+
+                                    <div class="col p-0">
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                            href="#guo2026label-abstract" role="button" aria-expanded="false"
+                                            aria-controls="guo2026label-abstract">Abstract</a>
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1"
+                                            href="https://arxiv.org/pdf/2610.16839" target="_blank">PDF</a>
+
+                                    </div>
+
+
+                                    <div class="col mt-2 p-0">
+                                        <div id="guo2026label-abstract" class="collapse">
+                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            In-context learning (ICL) applies large language models to new tasks by prepending a few labeled demonstrations to a query. Prior work has studied how demonstration ordering affects ICL, but the interaction between label arrangement patterns and model biases has not been systematically examined. We define label collapse as the failure mode in which the model generates query-independent labels, and show that it is architecturally universal at the tested 8-9B scale: five models spanning autoregressive (Llama-3, Qwen3.5) and discrete diffusion (LLaDA, iLLaDA, LLaDA-Instruct) families all exhibit label collapse even under the class-balanced alternating arrangement, with some label word pairs collapsing in virtually every tested condition and others flipping their collapse direction with arrangement. Critically, accuracy alone cannot detect this collapse: models can achieve near-chance accuracy while generating query-independent labels, a score indistinguishable from balanced performance, so the failure can persist undetected in deployment. We measure separation, the log-odds of the two label words at the query position (the quantity that label-bias calibration operates on), as a complementary diagnostic that exposes collapse hidden beneath surface accuracy, together with a measurement protocol that guards label extraction against tokenizer and formatting artifacts. For autoregressive models, collapse persists where the majority-label-bias account does not apply, and arrangement patterns can reverse the collapse direction; for diffusion models, we present a systematic evaluation of ICL failure modes, complementing contemporaneous studies of dLLM context comprehension and demonstration-order sensitivity, and identify open questions about how iterative denoising interacts with label biases.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
 
                     <li>
                         <div class="row m-0 mt-3 p-0">
