@@ -108,6 +108,55 @@
             </div>
             <div class="col-sm-11 p-0">
                 <ol class="bibliography">
+
+                    <li>
+                        <div class="row m-0 mt-3 p-0">
+                            <div class="col-sm-1 p-0 abbr">
+                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
+                                    href="" target="_blank">
+                                    NeurIPS
+                                </a>
+                            </div>
+                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+                                <div id="he2026how" class="col p-0">
+                                    <h5 class="title mb-0">How Data Scales in Agentic Reinforcement Learning: Laws and Synthesis Strategies
+                                    </h5>
+                                    <div class="author">
+                                        <nobr>Bowei He, Yankai Chen, Xiaokun Zhang, Changjiang Han, <em>Ye Yuan</em>, Chong Li, Xue Liu</nobr>
+                                        
+
+                                    </div>
+
+                                    <div>
+                                        <p class="periodical font-italic">
+                                            The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026).
+                                        </p>
+
+                                    </div>
+
+
+                                    <div class="col p-0">
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
+                                            href="#he2026how-abstract" role="button" aria-expanded="false"
+                                            aria-controls="he2026how-abstract">Abstract</a>
+
+                                        <a class="badge grey waves-effect font-weight-light mr-1"
+                                            href="https://arxiv.org/pdf/2610.23946" target="_blank">PDF</a>
+
+                                    </div>
+
+
+                                    <div class="col mt-2 p-0">
+                                        <div id="he2026how-abstract" class="collapse">
+                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+                                            Pretraining scaling laws treat training data as a one-dimensional quantity: a token count. Agentic reinforcement learning (RL) inherits this scalar abstraction, but modern synthesis pipelines now generate tasks, environments, and trajectories independently and at very different costs, turning data into a structured design space. This raises a question pretraining never had to answer: given a synthesis budget, which axis should be scaled? We address this question end-to-end with three tightly coupled contributions. First, we decompose agentic data into four axes (task, environment, trajectory, reward) and empirically fit per-axis scaling laws on Qwen3 models (4B/8B/14B) across math, code, and web/UI domains; we observe a robust ordering of per-axis scaling exponents that holds across model sizes, RL algorithms (GRPO and PPO), and domains. Second, we use the fitted laws as a common ruler to price synthesis methods, capturing each method's efficiency as a per-axis discount factor and identifying critical synthetic-to-real ratios at which collapse begins; these ratios differ by an order of magnitude across axes. Third, we cast budget allocation as a constrained optimization under our laws and discounts, deriving a Chinchilla-style compute-optimal recipe and validating it at held-out scale. The empirical results demonstrate that following the recipe yields up to compute efficiency over the dominant ``scale-the-trajectories'' practice.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
                     <li>
                         <div class="row m-0 mt-3 p-0">
                             <div class="col-sm-1 p-0 abbr">
@@ -200,54 +249,6 @@
                                         <div id="guo2026label-abstract" class="collapse">
                                             <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
                                             In-context learning (ICL) applies large language models to new tasks by prepending a few labeled demonstrations to a query. Prior work has studied how demonstration ordering affects ICL, but the interaction between label arrangement patterns and model biases has not been systematically examined. We define label collapse as the failure mode in which the model generates query-independent labels, and show that it is architecturally universal at the tested 8-9B scale: five models spanning autoregressive (Llama-3, Qwen3.5) and discrete diffusion (LLaDA, iLLaDA, LLaDA-Instruct) families all exhibit label collapse even under the class-balanced alternating arrangement, with some label word pairs collapsing in virtually every tested condition and others flipping their collapse direction with arrangement. Critically, accuracy alone cannot detect this collapse: models can achieve near-chance accuracy while generating query-independent labels, a score indistinguishable from balanced performance, so the failure can persist undetected in deployment. We measure separation, the log-odds of the two label words at the query position (the quantity that label-bias calibration operates on), as a complementary diagnostic that exposes collapse hidden beneath surface accuracy, together with a measurement protocol that guards label extraction against tokenizer and formatting artifacts. For autoregressive models, collapse persists where the majority-label-bias account does not apply, and arrangement patterns can reverse the collapse direction; for diffusion models, we present a systematic evaluation of ICL failure modes, complementing contemporaneous studies of dLLM context comprehension and demonstration-order sensitivity, and identify open questions about how iterative denoising interacts with label biases.</div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="row m-0 mt-3 p-0">
-                            <div class="col-sm-1 p-0 abbr">
-                                <a class="badge font-weight-bold light-blue darken-1 align-middle" style="width: 65px;"
-                                    href="" target="_blank">
-                                    NeurIPS
-                                </a>
-                            </div>
-                            <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-
-                                <div id="he2026how" class="col p-0">
-                                    <h5 class="title mb-0">How Data Scales in Agentic Reinforcement Learning: Laws and Synthesis Strategies
-                                    </h5>
-                                    <div class="author">
-                                        <nobr>Bowei He, Yankai Chen, Xiaokun Zhang, Changjiang Han, <em>Ye Yuan</em>, Chong Li, Xue Liu</nobr>
-                                        
-
-                                    </div>
-
-                                    <div>
-                                        <p class="periodical font-italic">
-                                            The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026).
-                                        </p>
-
-                                    </div>
-
-
-                                    <div class="col p-0">
-
-                                        <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse"
-                                            href="#he2026how-abstract" role="button" aria-expanded="false"
-                                            aria-controls="he2026how-abstract">Abstract</a>
-
-                                        <a class="badge grey waves-effect font-weight-light mr-1"
-                                            href="https://arxiv.org/pdf/2610.23946" target="_blank">PDF</a>
-
-                                    </div>
-
-
-                                    <div class="col mt-2 p-0">
-                                        <div id="he2026how-abstract" class="collapse">
-                                            <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-                                            Pretraining scaling laws treat training data as a one-dimensional quantity: a token count. Agentic reinforcement learning (RL) inherits this scalar abstraction, but modern synthesis pipelines now generate tasks, environments, and trajectories independently and at very different costs, turning data into a structured design space. This raises a question pretraining never had to answer: given a synthesis budget, which axis should be scaled? We address this question end-to-end with three tightly coupled contributions. First, we decompose agentic data into four axes (task, environment, trajectory, reward) and empirically fit per-axis scaling laws on Qwen3 models (4B/8B/14B) across math, code, and web/UI domains; we observe a robust ordering of per-axis scaling exponents that holds across model sizes, RL algorithms (GRPO and PPO), and domains. Second, we use the fitted laws as a common ruler to price synthesis methods, capturing each method's efficiency as a per-axis discount factor and identifying critical synthetic-to-real ratios at which collapse begins; these ratios differ by an order of magnitude across axes. Third, we cast budget allocation as a constrained optimization under our laws and discounts, deriving a Chinchilla-style compute-optimal recipe and validating it at held-out scale. The empirical results demonstrate that following the recipe yields up to compute efficiency over the dominant ``scale-the-trajectories'' practice.
-                                </div>
                             </div>
                         </div>
                     </li>
